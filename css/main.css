@@ -3,10 +3,23 @@ body {
 	font-family: tahoma, verdana;
 }
 
+input#feedback-context::placeholder {
+	text-align: left;
+	font-size: 15px;
+	padding: 0px 0px 0px 10px;
+}
+
+.feedback {
+	width: 498px;
+	height: 36px;
+	text-transform: none !important;
+}
+
 .container-cw {
     border: 1px solid #000;
     width: 500px;
-    margin: 0 auto;
+    margin: 21px auto 0px auto;
+    margin-bottom: 10px;
     box-shadow: 2px 5px 5px #464646;
 }
 
@@ -107,22 +120,36 @@ button.cross-word:hover {
 }
 
 /*jQuery classes*/
-.corMatch {
-	border: 1px #297500 solid;
+.corMatch { border: 1px #297500 solid;}
+
+.wroMatch { border: 1px #d40202 solid;}
+
+.auto-fill-style { border: 1px dashed #000;}
+
+.cor-ans-showing {
+	background: #ccc;
+	box-shadow: 2px 2px 2px #ccc;
 }
 
-.wroMatch {
-	border: 1px #d40202 solid;
-}
+.cor-ans-feedback {
 
-.auto-fill-style {
-	/*background: #56ef56;*/
-	border: 1px dashed #000;
 }
 
 /* Screen size with mob devices 375px:; */
 
 @media screen and (max-width: 375px) {
+
+input#feedback-context::placeholder {
+text-align: left;
+font-size: 15px;
+padding: 0px 0px 0px 10px;
+}
+
+.feedback {
+	width: 498px;
+	height: 36px;
+	text-transform: none !important;
+}
 
 .container-cw {
     border: 1px solid #000;

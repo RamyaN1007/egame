@@ -7,8 +7,8 @@ $(document).ready(function() {
 	var input_text = "<input type=text minlength=1 maxlength=1 required=required>";
 	var input_text_attrs = ["<input type=text minlength=1 maxlength=1 required=required placeholder=1 direction=down clues=11>",
 							"<input type=text minlength=1 maxlength=1 required=required placeholder=2 direction=across clues=7>",
-							"<input type=text minlength=1 maxlength=1 required=required placeholder=3 direction=across clues=3>",
-							"<input type=text minlength=1 maxlength=1 required=required placeholder=4 direction=down clues=6>",
+							"<input type=text minlength=1 maxlength=1 required=required placeholder=3 direction=across clues=3 name=ans3_across_grp>",
+							"<input type=text minlength=1 maxlength=1 required=required placeholder=4 direction=down clues=6 name=ans3_across_grp>",
 							"<input type=text minlength=1 maxlength=1 required=required placeholder=5 direction=down clues=10>",
 							"<input type=text minlength=1 maxlength=1 required=required placeholder=6 direction=down clues=8>",
 							"<input type=text minlength=1 maxlength=1 required=required placeholder=7 direction=across clues=3>",
@@ -57,7 +57,7 @@ $(document).ready(function() {
 	//Down clues insertion:
 	var clues_down = ["1. Synonym for separation when we categorize things!",
 					"4. This is a finest synthetic material used for the track surface of a horse racing track!",
-					"5. It is a type of benifit helps to pay less tax! for ex. who responsible for kids or on low income",
+					"5. This means concession to pay less tax! for ex. who responsible for kids or on low income",
 					"6. They safeguard respective citizens and countries border",
 					"7. Traditional planets in Solar system quantity"];
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
 		} else {
 			$('input[type=text]').addClass('corMatch').removeClass('wroMatch');
 		}
-	})
+	});
 
 	//Adding 'id' attribute and auto-increment for each inpt[type=text] of all rows:
 	var row1_id_nums = 5;
@@ -268,4 +268,442 @@ $(document).ready(function() {
 		$('#row14-10').val(ans11_across[8]).addClass('auto-fill-style');
 		$('#row14-11').val(ans11_across[9]).addClass('auto-fill-style');
 	});
+
+	//To disable the typing by the user:
+	$('#feedback-context').focus(function() {
+		$(this).blur().removeClass('corMatch wroMatch');
+	});	
+
+	//Moving cursor from one to another text box automatically upon detecting direction attribute:
+	$('#row1-5').keypress(function() {
+		var self = $(this);
+		setTimeout(function(){
+			if (self.val().length >= 1) {
+				$('#row2-5').focus().keypress(function() {
+					setTimeout(function(){
+						if (self.val().length >= 1) {
+							$('#row3-5').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row4-5').focus().keypress(function() {
+											setTimeout(function(){
+												$('#row5-4').focus().keypress(function() {
+													setTimeout(function(){
+														if (self.val().length >= 1) {
+															$('#row6-4').focus().keypress(function() {
+																setTimeout(function(){
+																	if (self.val().length >= 1) {
+																		$('#row7-4').focus().keypress(function() {
+																			setTimeout(function(){
+																				if (self.val().length >= 1) {
+																					$('#row8-4').focus().keypress(function() {
+																						setTimeout(function(){
+																							if (self.val().length >= 1) {
+																								$('#row9-5').focus().keypress(function() {
+																									setTimeout(function(){
+																										if (self.val().length >= 1) {
+																											$('#row10-4').focus().keypress(function() {
+																												setTimeout(function(){
+																													if (self.val().length >= 1) {
+																														$('#row11-5').focus();
+																													};
+																												}, 1);
+																											});
+																										};
+																									}, 1);
+																								});
+																							};
+																						}, 1);
+																					});
+																				};
+																			}, 1);
+																		});
+																	};
+																}, 1);
+															});
+														};
+													}, 1);
+												});
+											}, 1);
+										});
+									};
+								}, 1);
+							});
+						};
+					}, 1);
+				});
+			};
+		}, 1);
+	});
+	$('#row2-3').keypress(function() {
+		var self = $(this);
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row2-4').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row2-5').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row2-6').focus().keypress(function() {
+											setTimeout(function() {
+												if (self.val().length >= 1) {
+													$('#row2-7').focus().keypress(function() {
+														setTimeout(function() {
+															if (self.val().length >= 1) {
+																$('#row2-8').focus().keypress(function() {
+																	setTimeout(function(){
+																		if (self.val().length >= 1) {
+																			$('#row2-9').focus();
+																		};
+																	}, 1);
+																});
+															};
+														}, 1);
+													});
+												};
+											}, 1);
+										});
+									};
+								}, 1)
+							});
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row5-1').keypress(function() {
+		var self = $(this);
+		//Wait until character is inserted:
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row5-2').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row5-3').focus();
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row5-3').keypress(function() {
+		var self = $(this);
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row6-3').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row7-3').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row8-3').focus().keypress(function() {
+											setTimeout(function() {
+												if (self.val().length >= 1) {
+													$('#row9-3').focus().keypress(function() {
+														setTimeout(function() {
+															if (self.val().length >= 1) {
+																$('#row10-3').focus();
+															};
+														}, 1);
+													});
+												};
+											}, 1);
+										});
+									};
+								}, 1)
+							});
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row5-5').keypress(function() {
+		var self = $(this);
+		setTimeout(function(){
+			if (self.val().length >= 1) {
+				$('#row6-5').focus().keypress(function() {
+					setTimeout(function(){
+						if (self.val().length >= 1) {
+							$('#row7-5').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row8-5').focus().keypress(function() {
+											setTimeout(function(){
+												$('#row9-7').focus().keypress(function() {
+													setTimeout(function(){
+														if (self.val().length >= 1) {
+															$('#row10-5').focus().keypress(function() {
+																setTimeout(function(){
+																	if (self.val().length >= 1) {
+																		$('#row11-6').focus().keypress(function() {
+																			setTimeout(function(){
+																				if (self.val().length >= 1) {
+																					$('#row12-7').focus().keypress(function() {
+																						setTimeout(function(){
+																							if (self.val().length >= 1) {
+																								$('#row13-7').focus().keypress(function() {
+																									setTimeout(function(){
+																										if (self.val().length >= 1) {
+																											$('#row14-7').focus();
+																										};
+																									}, 1);
+																								});
+																							};
+																						}, 1);
+																					});
+																				};
+																			}, 1);
+																		});
+																	};
+																}, 1);
+															});
+														};
+													}, 1);
+												});
+											}, 1);
+										});
+									};
+								}, 1);
+							});
+						};
+					}, 1);
+				});
+			};
+		}, 1);
+	});
+	$('#row5-6').keypress(function() {
+		var self = $(this);
+		setTimeout(function(){
+			if (self.val().length >= 1) {
+				$('#row6-6').focus().keypress(function() {
+					setTimeout(function(){
+						if (self.val().length >= 1) {
+							$('#row7-6').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row8-6').focus().keypress(function() {
+											setTimeout(function(){
+												$('#row9-10').focus().keypress(function() {
+													setTimeout(function(){
+														if (self.val().length >= 1) {
+															$('#row10-6').focus().keypress(function() {
+																setTimeout(function(){
+																	if (self.val().length >= 1) {
+																		$('#row11-7').focus().keypress(function() {
+																			setTimeout(function(){
+																				if (self.val().length >= 1) {
+																					$('#row12-9').focus();
+																				};
+																			}, 1);
+																		});
+																	};
+																}, 1);
+															});
+														};
+													}, 1);
+												});
+											}, 1);
+										});
+									};
+								}, 1);
+							});
+						};
+					}, 1);
+				});
+			};
+		}, 1);
+	});
+	$('#row7-7').keypress(function() {
+		var self = $(this);
+		//Wait until character is inserted:
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row7-8').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row7-9').focus();
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row8-7').keypress(function() {
+		var self = $(this);
+		//Wait until character is inserted:
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row9-12').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row10-7').focus();
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row9-1').keypress(function() {
+		var self = $(this);
+		setTimeout(function(){
+			if (self.val().length >= 1) {
+				$('#row9-2').focus().keypress(function() {
+					setTimeout(function(){
+						if (self.val().length >= 1) {
+							$('#row9-3').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row9-4').focus().keypress(function() {
+											setTimeout(function(){
+												$('#row9-5').focus().keypress(function() {
+													setTimeout(function(){
+														if (self.val().length >= 1) {
+															$('#row9-6').focus().keypress(function() {
+																setTimeout(function(){
+																	if (self.val().length >= 1) {
+																		$('#row9-7').focus().keypress(function() {
+																			setTimeout(function(){
+																				if (self.val().length >= 1) {
+																					$('#row9-8').focus().keypress(function() {
+																						setTimeout(function(){
+																							if (self.val().length >= 1) {
+																								$('#row9-9').focus().keypress(function() {
+																									setTimeout(function(){
+																										if (self.val().length >= 1) {
+																											$('#row9-10').focus().keypress(function() {
+																												setTimeout(function(){
+																													if (self.val().length >= 1) {
+																														$('#row9-11').focus().keypress(function() {
+																															setTimeout(function(){
+																																if (self.val().length >= 1) {
+																																	$('#row9-12').focus();
+																																};
+																															}, 1);
+																														});
+																													};
+																												}, 1);
+																											});
+																										};
+																									}, 1);
+																								});
+																							};
+																						}, 1);
+																					});
+																				};
+																			}, 1);
+																		});
+																	};
+																}, 1);
+															});
+														};
+													}, 1);
+												});
+											}, 1);
+										});
+									};
+								}, 1);
+							});
+						};
+					}, 1);
+				});
+			};
+		}, 1);
+	});
+	$('#row12-6').keypress(function() {
+		var self = $(this);
+		//Wait until character is inserted:
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row12-7').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row12-8').focus();
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row12-9').keypress(function() {
+		var self = $(this);
+		//Wait until character is inserted:
+		setTimeout(function() {
+			if (self.val().length >= 1) {
+				$('#row12-10').focus().keypress(function() {
+					setTimeout(function() {
+						if (self.val().length >= 1) {
+							$('#row12-11').focus();
+						};
+					}, 1);
+				});
+			}
+		}, 1);
+	});
+	$('#row14-2').keypress(function() {
+		var self = $(this);
+		setTimeout(function(){
+			if (self.val().length >= 1) {
+				$('#row14-3').focus().keypress(function() {
+					setTimeout(function(){
+						if (self.val().length >= 1) {
+							$('#row14-4').focus().keypress(function() {
+								setTimeout(function(){
+									if (self.val().length >= 1) {
+										$('#row14-5').focus().keypress(function() {
+											setTimeout(function(){
+												$('#row14-6').focus().keypress(function() {
+													setTimeout(function(){
+														if (self.val().length >= 1) {
+															$('#row14-7').focus().keypress(function() {
+																setTimeout(function(){
+																	if (self.val().length >= 1) {
+																		$('#row14-8').focus().keypress(function() {
+																			setTimeout(function(){
+																				if (self.val().length >= 1) {
+																					$('#row14-9').focus().keypress(function() {
+																						setTimeout(function(){
+																							if (self.val().length >= 1) {
+																								$('#row14-10').focus().keypress(function() {
+																									setTimeout(function(){
+																										if (self.val().length >= 1) {
+																											$('#row14-11').focus();
+																										};
+																									}, 1);
+																								});
+																							};
+																						}, 1);
+																					});
+																				};
+																			}, 1);
+																		});
+																	};
+																}, 1);
+															});
+														};
+													}, 1);
+												});
+											}, 1);
+										});
+									};
+								}, 1);
+							});
+						};
+					}, 1);
+				});
+			};
+		}, 1);
+	});
+
+	//Feedback if the answer is correct and how many:
+	/*var ans7 = [];
+	ans7.push('input[id=row7-7]').val();
+	ans7.push('input[id=row7-8]').val();
+	ans7.push('input[id=row7-9]').val();
+	if (ans7[0] === ans[6][0] && ans7[1] === ans[6][1] && ans7[2] === ans[6][2]) {
+		$('#row7-7, #row7-8, #row7-9').addClass('cor-ans-showing');
+	};*/
+	
 });

@@ -11,8 +11,11 @@
 
 	<body>
 		<p class="title">Crossword General</p>
+		<div class="container-cw">
+			<input type="text" id="feedback-context" class="feedback" placeholder="Tells you if answer is right or wrong!">
+		</div>
 		 <div class="container-cw">
-        	<form>
+        	<form action="" method="">
 				<div class="cw-row-1"></div>
 				<div class="cw-row-2"></div>
 				<div class="cw-row-3"></div>
@@ -31,8 +34,10 @@
         	</form>
 	    </div>
 	    <div class="container-content">
-	    	<div class="text"><button type="submit" id="submit" class="cw feedback-btn">Feedback</button>
-	    		<div class="feedback-panel">Have you tried enough? want to give up! know the answers? click <br><button type="submit" id="auto-submit" class="cw">Auto-Complete</button></div>
+	    	<div class="text"><button type="submit" id="submit" class="cw feedback-btn">Want to Know?</button>
+	    		<div class="feedback-panel">Have you tried enough? want to give up! know the answers? click <br>
+	    			<button type="submit" id="auto-submit" class="cw">Auto-Complete</button>
+	    		</div>
 	    	</div>
 
 	    	<div class="cw-clues">
