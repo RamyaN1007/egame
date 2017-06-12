@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var ans = ["segregation", "theatre", "vat", "tapeta", "taxcredits", "soldiers", "nap", "nine", "netmigration", "nil", "sim", "tablespoon"];
 
 	//Input grids insertion:
-	var input_button = "<input type=button>";
+	var input_button = "<input type=button class=input-btns>";
 	var input_text = "<input type=text minlength=1 maxlength=1 required=required>";
 	var input_text_attrs = ["<input type=text minlength=1 maxlength=1 required=required placeholder=1 direction=down clues=11>",
 							"<input type=text minlength=1 maxlength=1 required=required placeholder=2 direction=across clues=7>",
