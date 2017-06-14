@@ -128,15 +128,20 @@ button.cw {
 }
 
 /*jQuery classes*/
-.corMatch { border: 1px #297500 solid;}
+.corMatch { border: 1px solid #297500;}
 
-.wroMatch { border: 1px #d40202 solid;}
+.wroMatch { border: 1px solid #d40202;}
 
 .auto-fill-style { border: 1px dashed #000;}
 
 .cor-ans-showing {
 	background: #ccc;
 	box-shadow: 2px 2px 2px #ccc;
+}
+
+.highlight-focus {
+	background: #6a9bb9;
+	border: 1px solid #000;
 }
 
 /* Screen size with mob devices 375px:(ip-6, htc) */
@@ -191,6 +196,8 @@ button.cw { border: 1px solid #7a7a7a; padding: 7px 10px; margin-top: 15px; font
 
 .auto-fill-style { border: 1px dashed #000; }
 
+.highlight-focus { background: #6a9bb9; border: 1px solid #000;}
+
 }
 
 /* Screen for mobiles ex: ip-5: */
@@ -243,6 +250,8 @@ button.cw { border: 1px solid #7a7a7a; padding: 7px 10px; margin-top: 15px; font
 .wroMatch { border: 1px #d40202 solid; }
 
 .auto-fill-style { border: 1px dashed #000; }
+
+.highlight-focus { background: #6a9bb9; border: 1px solid #000;}
 
 }
 
