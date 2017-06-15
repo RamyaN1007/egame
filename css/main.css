@@ -259,6 +259,8 @@ button.cw { border: 1px solid #7a7a7a; padding: 7px 10px; margin-top: 15px; font
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
+body { margin: 0 auto;}
+
 input#feedback-context::placeholder { text-align: left; font-size: 15px; padding: 0px 0px 0px 10px;}
 
 .feedback { width: 498px !important; height: 36px; text-transform: none !important;}
@@ -269,7 +271,7 @@ input#feedback-context::placeholder { text-align: left; font-size: 15px; padding
 
 .cw-row-1, .cw-row-2, .cw-row-3, .cw-row-4, .cw-row-5, .cw-row-6, .cw-row-7, .cw-row-8, .cw-row-9,
 .cw-row-10, .cw-row-11, .cw-row-12, .cw-row-13, .cw-row-14, .cw-row-15 
-{ display: grid; grid-template: repeat(16, 6.665%) / repeat(16, 6.665%);}
+{ display: flex;}
 
 .cw-grayed { background-color: #ccc; }
 
